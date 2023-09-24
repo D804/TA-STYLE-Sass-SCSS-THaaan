@@ -1,0 +1,492 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*General*/
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align {
+  align-items: center;
+}
+
+.justify {
+  justify-content: start;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #DC3C45;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #DC3C45;
+  border: 1px solid #DC3C45;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.flex-45 {
+  flex: 0 1 45%;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+.margin {
+  margin: 5rem 0;
+}
+
+.content-margin {
+  margin: 1.2rem 0;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+/* header*/
+.header {
+  background-color: #DC3C45;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.header h2 {
+  margin-right: 1rem;
+}
+
+.head-social {
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+.details h2 {
+  margin-left: 1rem;
+}
+
+.header-social i {
+  margin-left: 1rem;
+}
+
+.head {
+  background-color: #F2F2F2;
+}
+.head .logo {
+  font-size: 2.5rem;
+  color: #DC3C45;
+  font-weight: 800;
+}
+.head .logo span {
+  color: black;
+}
+
+.bars {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+.nav li {
+  margin-right: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: black;
+  padding: 1.3rem 0.2rem;
+}
+.nav i {
+  font-size: 1rem;
+  color: black;
+}
+.nav a {
+  color: black;
+}
+.nav a:hover {
+  color: #ffffff;
+}
+
+.active {
+  background-color: #DC3C45;
+  height: 100%;
+}
+
+/* Hero*/
+.hero {
+  position: relative;
+}
+
+.hero-header {
+  position: absolute;
+  top: 60%;
+}
+.hero-header p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* Services*/
+.services {
+  text-align: center;
+}
+.services .flex-30 {
+  border: 1px solid #DEE2E6;
+  border-radius: 0.5rem;
+  flex: 0 0 32%;
+  padding: 3rem 1rem;
+}
+.services .flex-30 img {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  color: #8B9298;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.para {
+  color: #8B9298;
+  font-size: 1.1rem;
+}
+
+/*Solution*/
+.solution {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 5rem 0;
+}
+.solution .container {
+  max-width: 60%;
+}
+
+.about {
+  text-align: center;
+}
+
+.about-img {
+  width: 3rem;
+}
+
+.team-img {
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
+/*Connect*/
+.connect {
+  background-color: #DC3C45;
+  padding: 2rem 0;
+  color: #ffffff;
+  padding: 3rem 0;
+}
+.connect .para {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.connect .btn-primary {
+  border: 1px solid #ffffff;
+}
+
+h6 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/*Ranking*/
+.ranking img {
+  margin-bottom: -5.4rem;
+}
+
+/*Client*/
+.client {
+  text-align: center;
+  background-color: #F8F9FA;
+  padding: 4rem 0;
+}
+.client img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/*Footer*/
+.footer {
+  background-color: #343A40;
+  color: #BDBDBD;
+  padding: 3rem 0;
+}
+.footer h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+.footer li {
+  margin-right: 1rem;
+}
+.footer .social-media i {
+  margin-right: 1rem;
+}
+
+/*Copyright*/
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.copyright h6 {
+  font-size: 0.8rem;
+}
+.copyright h6 span {
+  color: #888B8D;
+}
+.copyright small {
+  color: #888B8D;
+}
+
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 14px;
+  }
+  /*hero*/
+  .hero-header {
+    top: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .flex {
+    display: inline-block;
+  }
+  .header {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .head {
+    background-color: #F2F2F2;
+    padding: 1rem 0;
+  }
+  .header .flex {
+    display: flex;
+  }
+  .bars {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    right: 3rem;
+    top: 2.6rem;
+    z-index: 1;
+    display: block;
+    background-color: rgb(220, 60, 69);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(45, 61, 47, 0.9019607843);
+  }
+  .active {
+    background-color: rgba(41, 49, 42, 0);
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  #toggle {
+    display: none;
+    z-index: 1;
+  }
+  .nav a {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  /*Hero*/
+  .hero {
+    z-index: -2;
+  }
+  .hero-header {
+    z-index: -2;
+    top: 27%;
+  }
+  .hero-header h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  /*services*/
+  .services .flex-30 {
+    margin-bottom: 2rem;
+  }
+  /*connect*/
+  .connect .para {
+    margin-bottom: 1rem;
+  }
+  /*client*/
+  .flex-15 {
+    width: 35%;
+    margin: 0 auto;
+  }
+  /*footer*/
+  .footer .col {
+    display: flex;
+  }
+}
+@media scrren and (max-width: 670px) {
+  /*Hero*/
+  .hero-header {
+    top: 23%;
+  }
+}
+@media screen and (max-width: 585px) {
+  /*Header*/
+  .header .flex {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .header h2 {
+    margin: 0.5rem 0;
+  }
+  .header-social i {
+    margin-right: 1rem;
+  }
+  .head-social {
+    color: white;
+  }
+  .bars {
+    top: 8rem;
+  }
+  /*Hero*/
+  .hero-header {
+    z-index: -2;
+    top: 36%;
+  }
+  .hero-header h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 10px;
+  }
+  /*Hero*/
+  .hero-header {
+    top: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */

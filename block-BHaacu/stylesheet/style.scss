@@ -1,0 +1,211 @@
+
+@import"reset";
+@import"General";
+@import"Variable";
+
+
+body {
+    font-family: $font-family;
+}
+/* header*/
+.header {
+    background-color: $primary;
+    font-weight: 100;
+     font-size: 0.9rem; 
+    
+   h2 {
+    margin-right: 1rem;
+   }
+}
+.head-social {
+    
+    color: $secondary;
+    padding: 0.5rem ;
+}
+.details h2 {
+    margin-left: 1rem;
+}
+.header-social i {
+    margin-left: 1rem;
+}
+.head {
+    background-color: $tertiary;
+    
+    .logo {
+        font-size: 2.5rem;
+        color: $primary;
+        font-weight: 800;
+        span {
+            color: $black;
+        }
+    } 
+}
+.bars {
+    display: none;
+}
+input {
+    display: none;
+}
+.nav {
+    
+    li {
+        margin-right: 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $black; 
+        padding: 1.3rem 0.2rem;      
+    }
+    i {
+     font-size: 1rem;
+     color: $black;
+    }
+
+    a {
+        color: $black;
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+} 
+.active {
+    background-color: $primary;
+    height: 100%;
+}
+/* Hero*/ 
+.hero {
+    position: relative;
+}
+.hero-header {
+    position: absolute;
+    top: 60%;
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+h3 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  
+}
+
+/* Services*/
+.services {
+    text-align: center;
+    .flex-30 {
+        border: 1px solid  $-border;
+        border-radius: 0.5rem;
+        flex: 0 0 32%;
+        padding: 3rem 1rem;
+        
+        img {
+            height: 5.5rem;
+            width: 5.5rem;
+        }
+    } 
+}
+.paragraph {
+    font-size: 1.3rem;
+    color: $-para
+}
+h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
+.para {
+    color: $-para;
+    font-size: 1.1rem;
+}
+
+/*Solution*/ 
+ .solution {
+    text-align: center;
+    background-color: $tertiary;
+    padding: 5rem 0;
+    .container {
+        max-width: 60%;  
+    }
+ }
+ 
+.about {
+    text-align: center;
+}
+.about-img {
+    width: 3rem;
+    
+}
+.team-img {
+    border-radius: 0.5rem;
+    width: 70%;
+}
+/*Connect*/ 
+.connect {
+    background-color: $primary;
+    padding: 2rem 0;
+    color: $secondary;
+    padding: 3rem 0;
+    .para {
+        color: $secondary;
+        font-size: 1rem;
+        font-weight: 200;
+    } 
+    .btn-primary {
+        border: 1px solid $secondary;
+    }   
+}
+h6 {
+    font-size: 1.5rem;
+    color: $secondary;
+}
+/*Ranking*/ 
+.ranking {
+    img {
+        margin-bottom: -5.4rem;
+    }
+}
+/*Client*/ 
+.client {
+    text-align: center;
+    background-color: $-client-clr;
+    padding: 4rem 0;
+    img {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+/*Footer*/ 
+.footer {
+    background-color: $-footer-bclr;
+    color: $footer-clr;
+    padding: 3rem 0;
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 2rem 0;
+    }
+    li {
+        margin-right: 1rem;
+    } 
+    .social-media i {
+        margin-right: 1rem;
+    }
+}
+/*Copyright*/ 
+.copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    h6 {
+        font-size: 0.8rem;
+        span {
+            color: $copy;
+        }
+    }
+    small {
+        color: $copy;
+    }
+}
+@import"mediaquery";
