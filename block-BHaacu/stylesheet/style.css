@@ -52,6 +52,7 @@ table {
   border-spacing: 0;
 }
 
+/*General*/
 * {
   box-sizing: border-box;
   line-height: 1.5;
@@ -135,73 +136,11 @@ h4 {
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .flex {
-    display: block;
-  }
-  .header {
-    text-align: center;
-    padding: 0 1rem;
-  }
-  .nav {
-    display: none;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #3db0b4;
-  }
-  #toggle:checked ~ .nav {
-    display: inline-block;
-  }
-  .bars {
-    font-size: 2rem;
-    color: rgb(59, 52, 52);
-    position: fixed;
-    right: 3rem;
-    top: 4rem;
-    z-index: 1;
-    display: block;
-  }
-  #toggle {
-    display: none;
-    z-index: 9;
-  }
-  .nav a {
-    display: inline-block;
-    margin-top: 3rem;
-    margin-left: 50%;
-    color: rgb(180, 39, 39);
-    font-size: 2rem;
-    text-transform: capitalize;
-  }
-  .header .flex {
-    display: flex;
-  }
-  .services .flex-30 {
-    margin-bottom: 2rem;
-  }
-  .about .flex-30 {
-    margin-bottom: 2rem;
-  }
-  .connect .para {
-    margin-bottom: 1rem;
-  }
-  .flex-15 {
-    width: 20%;
-    margin: 0 auto;
-  }
-  .footer .col {
-    display: flex;
-  }
-}
 body {
   font-family: "Archivo", sans-serif;
 }
 
+/* header*/
 .header {
   background-color: #DC3C45;
   font-weight: 100;
@@ -212,13 +151,20 @@ body {
 }
 
 .head-social {
-  color: white;
-  padding: 1rem 0;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+.details h2 {
+  margin-left: 1rem;
+}
+
+.header-social i {
+  margin-left: 1rem;
 }
 
 .head {
   background-color: #F2F2F2;
-  padding: 1rem 0;
 }
 .head .logo {
   font-size: 2.5rem;
@@ -229,11 +175,20 @@ body {
   color: black;
 }
 
+.bars {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
 .nav li {
   margin-right: 2rem;
   font-weight: 600;
   font-size: 1.1rem;
   color: black;
+  padding: 1.3rem 0.2rem;
 }
 .nav i {
   font-size: 1rem;
@@ -243,7 +198,7 @@ body {
   color: black;
 }
 .nav a:hover {
-  color: #DC3C45;
+  color: #ffffff;
 }
 
 .active {
@@ -251,28 +206,27 @@ body {
   height: 100%;
 }
 
+/* Hero*/
+.hero {
+  position: relative;
+}
+
 .hero-header {
   position: absolute;
-  top: 20rem;
-}
-.hero-header h3 {
-  font-size: 4rem;
-  font-weight: 900;
-  text-transform: uppercase;
+  top: 60%;
 }
 .hero-header p {
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.hero {
-  background-image: url(../assets/media/banner-1.jpg);
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+h3 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
+/* Services*/
 .services {
   text-align: center;
 }
@@ -287,6 +241,11 @@ body {
   width: 5.5rem;
 }
 
+.paragraph {
+  font-size: 1.3rem;
+  color: #8B9298;
+}
+
 h5 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -297,11 +256,7 @@ h5 {
   font-size: 1.1rem;
 }
 
-.paragraph {
-  font-size: 1.3rem;
-  color: #8B9298;
-}
-
+/*Solution*/
 .solution {
   text-align: center;
   background-color: #F2F2F2;
@@ -324,30 +279,33 @@ h5 {
   width: 70%;
 }
 
+/*Connect*/
 .connect {
   background-color: #DC3C45;
   padding: 2rem 0;
-  color: white;
+  color: #ffffff;
   padding: 3rem 0;
 }
-.connect .btn-primary {
-  border: 1px solid white;
-}
 .connect .para {
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 200;
+}
+.connect .btn-primary {
+  border: 1px solid #ffffff;
 }
 
 h6 {
   font-size: 1.5rem;
-  color: white;
+  color: #ffffff;
 }
 
+/*Ranking*/
 .ranking img {
   margin-bottom: -5.4rem;
 }
 
+/*Client*/
 .client {
   text-align: center;
   background-color: #F8F9FA;
@@ -358,6 +316,7 @@ h6 {
   margin: 2rem 0;
 }
 
+/*Footer*/
 .footer {
   background-color: #343A40;
   color: #BDBDBD;
@@ -371,7 +330,11 @@ h6 {
 .footer li {
   margin-right: 1rem;
 }
+.footer .social-media i {
+  margin-right: 1rem;
+}
 
+/*Copyright*/
 .copyright {
   text-align: center;
   font-size: 0.8rem;
@@ -384,4 +347,146 @@ h6 {
 }
 .copyright small {
   color: #888B8D;
+}
+
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 14px;
+  }
+  /*hero*/
+  .hero-header {
+    top: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .flex {
+    display: inline-block;
+  }
+  .header {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .head {
+    background-color: #F2F2F2;
+    padding: 1rem 0;
+  }
+  .header .flex {
+    display: flex;
+  }
+  .bars {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    right: 3rem;
+    top: 2.6rem;
+    z-index: 1;
+    display: block;
+    background-color: rgb(220, 60, 69);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(45, 61, 47, 0.9019607843);
+  }
+  .active {
+    background-color: rgba(41, 49, 42, 0);
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  #toggle {
+    display: none;
+    z-index: 1;
+  }
+  .nav a {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  /*Hero*/
+  .hero {
+    z-index: -2;
+  }
+  .hero-header {
+    z-index: -2;
+    top: 27%;
+  }
+  .hero-header h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  /*services*/
+  .services .flex-30 {
+    margin-bottom: 2rem;
+  }
+  /*connect*/
+  .connect .para {
+    margin-bottom: 1rem;
+  }
+  /*client*/
+  .flex-15 {
+    width: 35%;
+    margin: 0 auto;
+  }
+  /*footer*/
+  .footer .col {
+    display: flex;
+  }
+}
+@media scrren and (max-width: 670px) {
+  /*Hero*/
+  .hero-header {
+    top: 23%;
+  }
+}
+@media screen and (max-width: 585px) {
+  /*Header*/
+  .header .flex {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .header h2 {
+    margin: 0.5rem 0;
+  }
+  .header-social i {
+    margin-right: 1rem;
+  }
+  .head-social {
+    color: white;
+  }
+  .bars {
+    top: 8rem;
+  }
+  /*Hero*/
+  .hero-header {
+    z-index: -2;
+    top: 36%;
+  }
+  .hero-header h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 10px;
+  }
+  /*Hero*/
+  .hero-header {
+    top: 25%;
+  }
 }/*# sourceMappingURL=style.css.map */
